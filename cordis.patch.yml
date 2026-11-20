@@ -1,0 +1,12 @@
+# Bundle layer for dsh-google-drive-tools.
+#
+# Listing this package in a profile's `dsh.profile.bundles` applies this patch, which mounts
+# the tool plugin. A profile that never lists the bundle can copy the same entry into its own
+# cordis.patch.yml instead.
+- insert:
+    - id: google-drive-tools
+      name: dsh-google-drive-tools
+      # config:
+      #   root: /workspace/GoogleDrive/files
+      #   allowWrite: true
+      #   allowDelete: true
